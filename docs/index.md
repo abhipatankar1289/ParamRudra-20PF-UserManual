@@ -108,7 +108,7 @@ module load spack
 . /home/apps/spack/share/spack/setup-env.sh
 spack find                   # installed packages
 spack load <pkg>             # load one
-module load AIStack/miniconda/26.7.0        # Python / Conda ML environments
+module load miniconda/26.7.0        # Python / Conda ML environments
 
 # SLURM essentials
 sinfo                        # partition / node status

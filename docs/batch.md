@@ -71,7 +71,7 @@ Create `job.slurm`:
 #SBATCH --time=02:00:00             # walltime HH:MM:SS (<= partition limit)
 #SBATCH --output=%x-%j.out          # stdout -> jobname-jobid.out
 #SBATCH --error=%x-%j.err           # stderr (omit to merge into .out)
-
+#SBATCH --mem=180G
 set -euo pipefail
 
 # 1) Reproducible environment

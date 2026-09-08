@@ -96,6 +96,7 @@ Here is the example of sample slurm script:
 #SBATCH --output=job.%J.out 	// name of output file
 #SBATCH --time=01:00:00    	// time required to execute the program
 #SBATCH --partition=debug 
+#SBATCH --mem=180G
 
 #// To load the package //
 source /home/apps/spack/share/spack/setup-env.sh
@@ -130,6 +131,8 @@ Note that the Slurm -J option is used to give the job a name.
 #!/bin/bash
 #SBATCH -p debug
 #SBATCH -J simple
+#SBATCH --mem=180G
+
 sleep 60
 Submit the job:  
 $ sbatch simple.sh
@@ -196,6 +199,8 @@ example: N1 -one node, N4 - four nodes. Instead of tmp here you can use the belo
 #SBATCH --output=job.%A_%a.out
 #SBATCH --time=01:00:00
 #SBATCH --partition=debug
+#SBATCH --mem=180G
+
 
 source /home/apps/spack/share/spack/setup-env.sh
 spack load intel-oneapi-compilers /nizifpn
@@ -272,6 +277,8 @@ Script for a Sequential Job
 #SBATCH --output=job.%J.out // name of output file
 #SBATCH --time=01:00:00    // time required to execute the program
 #SBATCH --partition=debug 
+#SBATCH --mem=180G
+
 
 #// To load the package //
 source /home/apps/spack/share/spack/setup-env.sh
@@ -290,7 +297,9 @@ Script for a Parallel OpenMP Job
 #SBATCH --error=job.%J.err    //  Name of error file
 #SBATCH --output=job.%J.out   // Name of output file
 #SBATCH --time=01:00:00       // Time take to execute the program 
-#SBATCH --partition=debug       
+#SBATCH --partition=debug   
+#SBATCH --mem=180G
+
 
 
 source /home/apps/spack/share/spack/setup-env.sh
@@ -355,6 +364,8 @@ Script for Hybrid Parallel Job – (MPI + OpenMP)
 #SBATCH --error=job.%J.err_16_node_48
 #SBATCH --output=job.%J.out_16_node_48
 #SBATCH --partition=debug
+#SBATCH --mem=180G
+
 
 # Load required package
 source /home/apps/spack/share/spack/setup-env.sh

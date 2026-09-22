@@ -24,8 +24,8 @@ finds nodes and runs your job when they are free.
 ## Partitions and limits
 | Partition | Priority | Min Core / GPU | Max Core / GPU | Max Walltime | Max Queued / User | Max Running / User | Overall Running |
 |-----------|---------:|---------------:|---------------:|--------------|------------------:|-------------------:|----------------:|
-| **debug** | **4800** | 1 | **192** (4 nodes) | 01:00:00 | 4 | 2 | 40 |
-| **terai** | **3400** | **480** (10 nodes) | **2400** (50 nodes) | 24:00:00 | 8 | 4 | 100 |
+| **debug** | **4800** | 1 | **432** (9 nodes) | 01:00:00 | 4 | 2 | 40 |
+| **terai** | **3400** | **480** (10 nodes) | **2400** (50 nodes) | 24:00:00 | 16 | 8 | 140 |
 | **shiwalik** | **3700** | **2448** (51 nodes) | **12288** (256 nodes) | 24:00:00 | 4 | 2 | 30 |
 | **himachal** | **4000** | **12336** (257 nodes) | **24576** (512 nodes) | 12:00:00 | 4 | 2 | 6 |
 | **himadri** | **6000** | **24624** (513 nodes) | **72000** (1500 nodes) | 06:00:00 | 2 | 1 | 1 |
@@ -33,8 +33,8 @@ finds nodes and runs your job when they are free.
 | **gpu-small** | **3400** | **10** (5 nodes) | **50** (25 nodes) | 24:00:00 | 8 | 4 | 40 |
 | **gpu-large** | **4000** | **52** (26 nodes) | **200** (100 nodes) | 12:00:00 | 4 | 2 | 6 |
 | **gpu-massive** | **5000** | **202** (101 nodes) | **400** (200 nodes) | 06:00:00 | 2 | 2 | 2 |
-| **hm-small** | **3700** | **480** (10 nodes) | **2400** (50 nodes) | 24:00:00 | 6 | 4 | 10 |
-| **hm-large** | **4000** | **2448** (51 nodes) | **4800** (100 nodes) | 12:00:00 | 4 | 2 | 6 |
+| **hm-small** | **3700** | **480** (10 nodes) | **2400** (50 nodes) | 12:00:00 | 6 | 4 | 10 |
+| **hm-large** | **4000** | **2448** (51 nodes) | **4800** (100 nodes) | 24:00:00 | 4 | 2 | 6 |
 
 ```bash
 sinfo -s                          # quick partition summary

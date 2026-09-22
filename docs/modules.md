@@ -26,7 +26,7 @@ This page covers `module` and Conda. For `spack`, see the
 module avail
 module avail 2>&1 | grep -i conda    # module output goes to stderr — use 2>&1
 module load spack                    # enable Spack
-module load miniconda                # enable the Conda/Python base
+module load miniconda/26.7.0                # enable the Conda/Python base
 module list
 ```
 
